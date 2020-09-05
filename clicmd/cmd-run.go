@@ -8,8 +8,8 @@ import (
 	"time"
 
 	"github.com/spf13/cobra"
-	"github.com/tonypoch/rrdreader.git/htmlviewer"
-	"github.com/tonypoch/rrdreader.git/rrdtool"
+	"github.com/tonypoch/rrdreader/htmlviewer"
+	"github.com/tonypoch/rrdreader/rrdtool"
 )
 
 func CmdRun(cmd *cobra.Command, args []string) {

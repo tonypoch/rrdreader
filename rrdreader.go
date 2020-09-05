@@ -2,7 +2,7 @@ package main
 
 import (
 	"github.com/spf13/cobra"
-	"github.com/tonypoch/rrdreader.git/clicmd"
+	"github.com/tonypoch/rrdreader/clicmd"
 )
 
 func main() {
