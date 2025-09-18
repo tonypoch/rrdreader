@@ -23,8 +23,8 @@ func CmdRun(cmd *cobra.Command, args []string) {
 
 	hostame, _ := os.Hostname()
 
-	if _, err := os.Stat(outputDir); os.IsNotExist(err) {
-		log.Fatalf("No such directory: %s", outputDir)
+	if err := os.MkdirAll(outputDir, 0755); err != nil {
+		log.Fatalf("Can't create directory: %s", outputDir)
 	}
 
 	if rpcPort == 0 {
